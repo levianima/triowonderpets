@@ -4,7 +4,7 @@ function login() {
 
     // Replace these credentials with your desired ones
     const correctUsername = '09132024';
-    const correctPassword = 'bracelet';
+    const correctPassword = 'rocky road';
 
     if (username === correctUsername && password === correctPassword) {
         window.location.href = './qr.html';
