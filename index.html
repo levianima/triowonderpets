@@ -13,6 +13,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-image: url('./wonderpets.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(3px);
         }
         .login-container {
             background-color: #fff;
@@ -62,12 +67,18 @@
 		::placeholder {
 			color: #cfcfcf;
 		}
+        p#note {
+            font-size: 10px;
+            margin-top: 2px;
+            text-align: center;
+            color: #bbbbbb;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h1>Year End Secret Message</h1>
-		<p>When was the Wonderpets GC created?</p>
+        <h1>Year End Secret Message <p id="note">help each other out!</p> </h1>
+		<p>Jahvey's first Starbucks date with me.</p>
         <input type="text" id="username" placeholder="mmddyyyy (eg. 08242004)" required>
 		<p>What is the flavor of the first ice cream that I bought for Regine? Clue: West PH Sea.</p>
         <input type="text" id="password" placeholder="small letters only" required>

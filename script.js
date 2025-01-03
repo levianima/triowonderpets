@@ -3,7 +3,7 @@ function login() {
     const password = document.getElementById('password').value;
 
     // Replace these credentials with your desired ones
-    const correctUsername = '09132024';
+    const correctUsername = '07152024';
     const correctPassword = 'rocky road';
 
     if (username === correctUsername && password === correctPassword) {
