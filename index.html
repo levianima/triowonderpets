@@ -75,15 +75,24 @@
             text-align: center;
             color: #bbbbbb;
         }
+        p#datecreated {
+            font-size: 5px;
+            margin-top: 1px;
+            margin-bottom: 10px;
+            text-align: right;
+            color: rgb(95, 95, 95);
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
         <h1>Year End Secret Message <p id="note">help each other out!</p> </h1>
-		<p>When was Jahvey's first Starbucks date with me.</p>
+		<p>Jahvey's first Starbucks date with me.</p>
         <input type="text" id="username" placeholder="mmddyyyy (eg. 08242004)" required>
 		<p>What is the flavor of the first ice cream that I bought for Regine? Clue: West PH Sea.</p>
         <input type="text" id="password" placeholder="small letters only" required>
+        <p id="datecreated">Created on December 30, 2024</p>
         <button onclick="login()">Verify</button>
     </div>
 
