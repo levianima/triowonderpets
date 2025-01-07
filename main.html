@@ -53,7 +53,7 @@
         .login-container button:hover {
             background-color: #0056b3;
         }
-		input#username, input#password {
+		input#q1, input#q2,input#q3, input#q4 {
 			width: 90%;
 			padding: 10px;
 			margin: 10px 0;
@@ -88,12 +88,16 @@
 <body>
     <div class="login-container">
         <h1>Year End Secret Message <p id="note">help each other out!</p> </h1>
-		<p>Jahvey's first Starbucks date with me.</p>
-        <input type="text" id="username" placeholder="mmddyyyy (eg. 08242004)" required>
+		<p>Jahvey's first Starbucks date with me. Clue: Jahvey's archive</p>
+        <input type="text" id="q1" placeholder="mmddyyyy (ex. 08242004)" required>
 		<p>What is the flavor of the first ice cream that I bought for Regine? Clue: West PH Sea.</p>
-        <input type="text" id="password" placeholder="small letters only" required>
+        <input type="text" id="q2" placeholder="flavor here" required>
+        <p>What is the number of the candle that you gave to me?</p>
+        <input type="text" id="q3" placeholder="number here (ex. 4)" required>
+        <p>Ano ninalagay sa pancit canton?</p>
+        <input type="text" id="q4" placeholder="never ko pa na try" required>
         <p id="datecreated">Created on December 30, 2024</p>
-        <button onclick="login()">Verify</button>
+        <button id="myBtn" onclick="login()">Verify</button>
     </div>
 
     <script src="./script.js"></script>
