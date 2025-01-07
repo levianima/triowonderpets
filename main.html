@@ -13,13 +13,14 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-image: url('./wonderpets.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
-            
         }
+
         .login-container {
             background-color: #fff;
             padding: 20px;
@@ -52,27 +53,49 @@
         .login-container button:hover {
             background-color: #0056b3;
         }
-        p {
-            font-weight: 700;
-            margin-top: 10px;
-            margin-bottom: 30px;
-            font-size: 30px;
+		input#username, input#password {
+			width: 90%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		p {
+			margin-bottom: 0px;
+			font-size: 12px;
+			text-align: left;
+			margin-left: 1vh;
+		}
+		::placeholder {
+			color: #cfcfcf;
+		}
+        p#note {
+            font-size: 10px;
+            margin-top: 2px;
             text-align: center;
-            margin-left: 1vh;
+            color: #bbbbbb;
+        }
+        p#datecreated {
+            font-size: 5px;
+            margin-top: 1px;
+            margin-bottom: 10px;
+            text-align: right;
+            color: rgb(95, 95, 95);
+            font-weight: 700;
         }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <p>Are you ready?</p>
-        <button onclick="myAlert()"">Ready!</button>
+        <h1>Year End Secret Message <p id="note">help each other out!</p> </h1>
+		<p>Jahvey's first Starbucks date with me.</p>
+        <input type="text" id="username" placeholder="mmddyyyy (eg. 08242004)" required>
+		<p>What is the flavor of the first ice cream that I bought for Regine? Clue: West PH Sea.</p>
+        <input type="text" id="password" placeholder="small letters only" required>
+        <p id="datecreated">Created on December 30, 2024</p>
+        <button onclick="login()">Verify</button>
     </div>
 
-    <script>
-        function myAlert() {
-            alert("Help each other out! I expect the two of you are together physically since both of you have pieces of the qr code.");
-            window.location.href = './main.html';   
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+$("body").fadeTo(1000 , 1);
+
+
+
 function login() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
